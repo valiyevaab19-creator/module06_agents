@@ -1,0 +1,3 @@
+## Week 10 Mini-Project
+
+My mini-project is a mock appointment assistant for a small office. It can look up available appointment times for Monday, Wednesday, and Friday using a separate tool class. The assistant is a mock because its schedule is stored in a Python dictionary and its responses use simple keyword rules instead of a real AI model. Booking, cancelling, and rescheduling requests are passed to a person because those actions change the schedule. If this assistant used real customer data, incorrect or exposed appointment information could create privacy and scheduling problems.
