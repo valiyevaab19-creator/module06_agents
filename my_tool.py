@@ -17,3 +17,15 @@ class AppointmentLookup:
         if day in self.appointments:
             return self.appointments[day]
         return None
+
+    def check_open_times(self, day):
+        """Check the available appointment times for one day.
+
+        Args:
+            day: The day of the week, like monday.
+        """
+        found = self.find_day(day)
+        if found is None:
+            return "That day was not found."
+        times = self.times_for(found)
+        return f"The office is open on {found} at {' and '.join(times)}."

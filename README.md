@@ -5,3 +5,6 @@ My mini-project is a mock appointment assistant for a small office. It can look 
 Week 11 - Local Model
 
 The model answered the office location correctly using the facts in its instructions. It also correctly explained what a customer should bring to an appointment. When I asked whether the office does business taxes, it said that it did not know and directed me to the front desk. I kept appointment times and schedule changes in code because those answers need to be reliable and should not be invented by the model. The model is used only for questions that are not already handled by the program’s rules.
+
+Week 12 - Tools and Guardrails
+The appointment assistant now lets the model choose when to use its tools. It handled a request for Monday’s available appointment times correctly by using the schedule tool. The toolbox refused a booking when the model supplied a client name that the customer had never provided. Booking requests now wait for front desk approval before becoming confirmed bookings. I also added an instruction telling Robin to greet the client and ask how it can help when the client only says hello.
